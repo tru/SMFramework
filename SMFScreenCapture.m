@@ -6,6 +6,7 @@
 //  Copyright 2010 tomcool.org. All rights reserved.
 //
 
+#if 0
 #import "SMFScreenCapture.h"
 #import <UIKit/UIImage.h>
 //#import <ImageIO/ImageIO.h>
@@ -322,3 +323,4 @@ static int IOSurfaceAcceleratorSave(NSString *path, IOSurfaceID searchId,int min
     return [UIImagePNGRepresentation(img2) autorelease];
 }
 @end
+#endif
