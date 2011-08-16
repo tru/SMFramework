@@ -2288,11 +2288,6 @@
 		DD82BE0D1300A8AB007221FC /* SMFControlFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFControlFactory.h; sourceTree = "<group>"; };
 		DD82BE0E1300A8AB007221FC /* SMFControlFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMFControlFactory.m; sourceTree = "<group>"; };
 		DD8B8F2512FE1ECA00971B0A /* SMFPopup.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SMFPopup.mm; sourceTree = "<group>"; };
-		DD96C0471295D949002C5144 /* control */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
-		DD96C0481295D949002C5144 /* EventCatcher.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = EventCatcher.plist; sourceTree = "<group>"; };
-		DD96C0491295D949002C5144 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		DD96C29A1295D94A002C5144 /* Tweak.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tweak.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		DD96C3401298B8EA002C5144 /* SMFPopup.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SMFPopup.xm; sourceTree = "<group>"; };
 		DD96C3411298B9A0002C5144 /* SMFPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFPopup.h; sourceTree = "<group>"; };
 		DD96C3DB129971A2002C5144 /* control */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
 		DD96C83A129B5C99002C5144 /* SMFColorSelectionMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFColorSelectionMenu.h; sourceTree = "<group>"; };
@@ -2371,7 +2366,6 @@
 		DDDC81721273A67000192ADD /* SMFController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFController.h; sourceTree = "<group>"; };
 		DDDC81731273A67000192ADD /* SMFController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMFController.m; sourceTree = "<group>"; };
 		DDDC818F1273B8C000192ADD /* SMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFramework.h; sourceTree = "<group>"; };
-		DDE20A391378CEE3003273CC /* Eventcatcher.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Eventcatcher.mm; sourceTree = "<group>"; };
 		DDE20A941378DC22003273CC /* SMFPrefsSelectionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFPrefsSelectionItem.h; sourceTree = "<group>"; };
 		DDE20A951378DC22003273CC /* SMFPrefsSelectionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMFPrefsSelectionItem.m; sourceTree = "<group>"; };
 		DDE20ABE1378DE96003273CC /* Untitled-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Untitled-Info.plist"; sourceTree = "<group>"; };
@@ -2406,7 +2400,6 @@
 				DD96C3DB129971A2002C5144 /* control */,
 				875A8427126FFF6D00ECADC2 /* Makefile */,
 				875A8425126FFF6500ECADC2 /* build.sh */,
-				DD96C0411295D949002C5144 /* eventcatcher */,
 				DD1462FB12B53B6C00FA8984 /* SMFHelper */,
 				DDCC4AA413CDF7710099DFED /* Examples */,
 				DD5379E812BE78470022849E /* Protocols */,
@@ -2470,7 +2463,6 @@
 				DDAE5E0A12838A980038574E /* SMFCommonTools.h */,
 				DDAE5E0B12838A980038574E /* SMFCommonTools.m */,
 				DD96C3411298B9A0002C5144 /* SMFPopup.h */,
-				DD96C3401298B8EA002C5144 /* SMFPopup.xm */,
 				DD8B8F2512FE1ECA00971B0A /* SMFPopup.mm */,
 				DD82BE0D1300A8AB007221FC /* SMFControlFactory.h */,
 				DD82BE0E1300A8AB007221FC /* SMFControlFactory.m */,
@@ -3662,18 +3654,6 @@
 				DD65C0E613C77E2A001B4916 /* WSLogging.h */,
 			);
 			path = Backrow;
-			sourceTree = "<group>";
-		};
-		DD96C0411295D949002C5144 /* eventcatcher */ = {
-			isa = PBXGroup;
-			children = (
-				DDE20A391378CEE3003273CC /* Eventcatcher.mm */,
-				DD96C0471295D949002C5144 /* control */,
-				DD96C0481295D949002C5144 /* EventCatcher.plist */,
-				DD96C0491295D949002C5144 /* Makefile */,
-				DD96C29A1295D94A002C5144 /* Tweak.xm */,
-			);
-			path = eventcatcher;
 			sourceTree = "<group>";
 		};
 		DD9B45D8135B46E400FC4779 /* Resources */ = {
