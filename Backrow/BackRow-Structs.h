@@ -5,6 +5,7 @@
  * Source: /System/Library/PrivateFrameworks/BackRow.framework/BackRow
  */
 
+#if 0
 typedef struct __ATVMediaItem *ATVMediaItemRef;
 
 typedef struct BRMultiPartImageMap {
@@ -33,3 +34,4 @@ typedef struct __ATVMediaCollection *ATVMediaCollectionRef;
 typedef struct __ATVMediaType *ATVMediaTypeRef;
 
 
+#endif
