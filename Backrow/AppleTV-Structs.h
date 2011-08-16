@@ -59,9 +59,9 @@ typedef struct __CFSocket *CFSocketRef;
 
 
 
-typedef struct __SCPreferences *SCPreferencesRef;
+typedef const struct __SCPreferences *SCPreferencesRef;
 
-typedef struct __SCNetworkService *SCNetworkServiceRef;
+typedef const struct __SCNetworkService *SCNetworkServiceRef;
 
 
 
@@ -161,13 +161,13 @@ typedef struct BRFocusEdge {
 	CGPoint _field2;
 } BRFocusEdge;
 
-typedef struct __CTFont *CTFontRef;
+typedef const struct __CTFont *CTFontRef;
 
-typedef struct __SCDynamicStore *SCDynamicStoreRef;
+typedef const struct __SCDynamicStore *SCDynamicStoreRef;
 
-typedef struct __CTLine *CTLineRef;
+typedef const struct __CTLine *CTLineRef;
 
-typedef struct __CTTypesetter *CTTypesetterRef;
+typedef const struct __CTTypesetter *CTTypesetterRef;
 
 typedef struct HttpStreamReader HttpStreamReader;
 
