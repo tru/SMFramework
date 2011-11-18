@@ -5133,7 +5133,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LD_OPENMP_FLAGS = "-undefined dynamic_lookup -fopenmp";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"-undefined",
 					dynamic_lookup,
@@ -5157,7 +5157,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LD_OPENMP_FLAGS = "-undefined dynamic_lookup -fopenmp";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"-undefined",
 					dynamic_lookup,
