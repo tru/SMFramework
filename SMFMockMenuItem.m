@@ -11,6 +11,4 @@
 
 @implementation SMFMockMenuItem
 
-@synthesize bounds, position;
-
 @end

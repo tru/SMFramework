@@ -11,12 +11,6 @@
 
 @interface SMFMockMenuItem : NSObject {
 
-	CGPoint position;
-	CGRect  bounds;
-	
 }
-
-@property(assign) CGPoint position;	
-@property(assign) CGRect bounds;
 
 @end
