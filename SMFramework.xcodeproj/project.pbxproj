@@ -6,64 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		DDBACDAB1321F9CD0000597B /* installatv */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = DDBACDAE1321F9EB0000597B /* Build configuration list for PBXAggregateTarget "installatv" */;
-			buildPhases = (
-				DDBACDAA1321F9CD0000597B /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = installatv;
-			productName = installatv;
-		};
-		DDBACDB01321F9FE0000597B /* installtest */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = DDBACDBF1321FAAA0000597B /* Build configuration list for PBXAggregateTarget "installtest" */;
-			buildPhases = (
-				DDBACDAF1321F9FE0000597B /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = installtest;
-			productName = Untitled;
-		};
-		DDBACDB41321FA230000597B /* clean */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = DDBACDC01321FAAA0000597B /* Build configuration list for PBXAggregateTarget "clean" */;
-			buildPhases = (
-				DDBACDB31321FA230000597B /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = clean;
-			productName = clean;
-		};
-		DDCC4AAD13CE252F0099DFED /* dropbox */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = DDCC4AAF13CE252F0099DFED /* Build configuration list for PBXAggregateTarget "dropbox" */;
-			buildPhases = (
-				DDCC4AAE13CE252F0099DFED /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = dropbox;
-			productName = Install;
-		};
-		DDDC81991273B9B800192ADD /* Install */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = DDDC819C1273B9D600192ADD /* Build configuration list for PBXAggregateTarget "Install" */;
-			buildPhases = (
-				DDDC81981273B9B800192ADD /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = Install;
-			productName = Install;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		3226AD541424897C0014943B /* SMFMockMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3226AD521424897C0014943B /* SMFMockMenuItem.m */; };
 		3226AD551424897C0014943B /* SMFMockMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3226AD531424897C0014943B /* SMFMockMenuItem.h */; };
@@ -4858,11 +4800,6 @@
 			projectRoot = "";
 			targets = (
 				8D5B49AC048680CD000E48DA /* SMFramework */,
-				DDDC81991273B9B800192ADD /* Install */,
-				DDBACDAB1321F9CD0000597B /* installatv */,
-				DDBACDB01321F9FE0000597B /* installtest */,
-				DDBACDB41321FA230000597B /* clean */,
-				DDCC4AAD13CE252F0099DFED /* dropbox */,
 			);
 		};
 /* End PBXProject section */
@@ -4898,75 +4835,11 @@
 				$SRCROOT/SMFPopup.xm,
 			);
 			outputPaths = (
+				$SRCROOT/SMFPopup.mm,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export THEOS=/opt/theos\n$THEOS/bin/logos.pl $SRCROOT/SMFPopup.xm > $SRCROOT/SMFPopup.mm";
-		};
-		DDBACDAA1321F9CD0000597B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "source ~/.profile\nmake -j 4 installatv\n";
-		};
-		DDBACDAF1321F9FE0000597B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "source ~/.profile\nmake -j 4 installtest";
-		};
-		DDBACDB31321FA230000597B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "source ~/.profile\nmake clean";
-		};
-		DDCC4AAE13CE252F0099DFED /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "source ~/.profile\nmake -j 4 package dropbox\nrm -rf Headers\nmkdir Headers\ncp *.h Headers/";
-		};
-		DDDC81981273B9B800192ADD /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "source ~/.profile\nmake -j 4 package install\nrm -rf Headers\nmkdir Headers\ncp *.h Headers/";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -5082,6 +4955,7 @@
 					dynamic_lookup,
 				);
 				PRODUCT_NAME = SMFramework;
+				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -5112,6 +4986,7 @@
 					dynamic_lookup,
 				);
 				PRODUCT_NAME = SMFramework;
+				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -5168,110 +5043,6 @@
 			};
 			name = Release;
 		};
-		DDBACDAC1321F9CD0000597B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = armv6;
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				PRODUCT_NAME = installatv;
-			};
-			name = Debug;
-		};
-		DDBACDAD1321F9CD0000597B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = armv6;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				PRODUCT_NAME = installatv;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-		DDBACDB11321F9FE0000597B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = armv6;
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				PRODUCT_NAME = Untitled;
-			};
-			name = Debug;
-		};
-		DDBACDB21321F9FE0000597B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = armv6;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				PRODUCT_NAME = Untitled;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-		DDBACDB51321FA240000597B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				PRODUCT_NAME = clean;
-			};
-			name = Debug;
-		};
-		DDBACDB61321FA240000597B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				PRODUCT_NAME = clean;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-		DDCC4AB013CE252F0099DFED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				PRODUCT_NAME = dropbox;
-			};
-			name = Debug;
-		};
-		DDCC4AB113CE252F0099DFED /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				PRODUCT_NAME = dropbox;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-		DDDC819A1273B9B800192ADD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				PRODUCT_NAME = Install;
-			};
-			name = Debug;
-		};
-		DDDC819B1273B9B800192ADD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				PRODUCT_NAME = Install;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -5289,51 +5060,6 @@
 			buildConfigurations = (
 				1DEB913F08733D840010E9CD /* Debug */,
 				1DEB914008733D840010E9CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DDBACDAE1321F9EB0000597B /* Build configuration list for PBXAggregateTarget "installatv" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DDBACDAC1321F9CD0000597B /* Debug */,
-				DDBACDAD1321F9CD0000597B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DDBACDBF1321FAAA0000597B /* Build configuration list for PBXAggregateTarget "installtest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DDBACDB11321F9FE0000597B /* Debug */,
-				DDBACDB21321F9FE0000597B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DDBACDC01321FAAA0000597B /* Build configuration list for PBXAggregateTarget "clean" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DDBACDB51321FA240000597B /* Debug */,
-				DDBACDB61321FA240000597B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DDCC4AAF13CE252F0099DFED /* Build configuration list for PBXAggregateTarget "dropbox" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DDCC4AB013CE252F0099DFED /* Debug */,
-				DDCC4AB113CE252F0099DFED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DDDC819C1273B9D600192ADD /* Build configuration list for PBXAggregateTarget "Install" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DDDC819A1273B9B800192ADD /* Debug */,
-				DDDC819B1273B9B800192ADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
