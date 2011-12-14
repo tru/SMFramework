@@ -10,3 +10,4 @@ _/*
 obj/*.m.o
 *SMFramework.xcodeproj/kevinbradley.*
 SMFramework.xcodeproj/xcuserdata
+SMFPopup.mm
