@@ -58,7 +58,7 @@ static classname *sharedN = nil; \
 	return NSUIntegerMax; \
 } \
  \
-- (void)release \
+- (oneway void)release \
 { \
 } \
  \

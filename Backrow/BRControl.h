@@ -196,7 +196,7 @@
 // converted property setter: - (void)setHidden:(BOOL)hidden;	// 0x34cbb6e5
 // converted property setter: - (void)setIdentifier:(id)identifier;	// 0x34cba465
 // converted property setter: - (void)setInhibitsFocusForChildren:(BOOL)children;	// 0x34cbbda1
-- (void)setInhibitsScrollFocusForChildren:(bool)children;	// 0x34cbbde1
+- (void)setInhibitsScrollFocusForChildren:(BOOL)children;	// 0x34cbbde1
 // converted property setter: - (void)setKeyEventTargetControl:(id)control;	// 0x34cba8d9
 // converted property setter: - (void)setMasksToBounds:(BOOL)bounds;	// 0x34cbb625
 // converted property setter: - (void)setName:(id)name;	// 0x34cbb229

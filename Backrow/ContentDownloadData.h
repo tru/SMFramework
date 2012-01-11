@@ -58,13 +58,13 @@ __attribute__((visibility("hidden")))
 @property(assign, nonatomic) int movieAverageBandwidth;	// G=0x34f13850; S=0x34f13864; @synthesize
 @property(assign, nonatomic) int movieDuration;	// G=0x34f138a0; S=0x34f138b4; @synthesize
 @property(assign, nonatomic) int moviePeakBandwidth;	// G=0x34f13878; S=0x34f1388c; @synthesize
-@property(readonly, retain, nonatomic) NSMutableString *moviePlaylist;	// G=0x34f1383c; @synthesize
+@property(readonly, retain, nonatomic) id moviePlaylist;	// G=0x34f1383c; @synthesize
 @property(retain, nonatomic) NSError *nsError;	// G=0x34f13a38; S=0x34f13e68; @synthesize
 @property(assign, nonatomic) double parseKeyEndTime;	// G=0x34f138c8; S=0x34f138e0; @synthesize
 @property(assign, nonatomic) double parseKeyStartTime;	// G=0x34f138f8; S=0x34f13910; @synthesize
 @property(assign, nonatomic) double playlistGenerateEndTime;	// G=0x34f13928; S=0x34f13940; @synthesize
 @property(assign, nonatomic) double playlistGenerateStartTime;	// G=0x34f13958; S=0x34f13970; @synthesize
-@property(readonly, retain, nonatomic) NSString *redirectedUrl;	// G=0x34f13a9c; @synthesize
+@property(readonly, retain, nonatomic) id redirectedUrl;	// G=0x34f13a9c; @synthesize
 @property(assign, nonatomic) unsigned sortedIndex;	// G=0x34f13ad8; S=0x34f13aec; @synthesize
 @property(assign, nonatomic) int state;	// G=0x34f13a74; S=0x34f13a88; @synthesize
 @property(readonly, retain, nonatomic) NSString *url;	// G=0x34f13ab0; @synthesize

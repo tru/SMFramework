@@ -31,7 +31,7 @@
 @property(readonly, retain) ATVRemoteSet *learningSet;	// G=0x34c3e135; converted property
 @property(readonly, retain) NSMutableArray *remoteSets;	// G=0x34c3e889; converted property
 @property(assign) int state;	// G=0x34c3e105; S=0x34c3e0d1; converted property
-@property(readonly, retain) ATVRemoteSet *temporaryActiveSet;	// G=0x34c3e531; converted property
+@property(readonly, retain) id temporaryActiveSet;	// G=0x34c3e531; converted property
 + (id)sharedManager;	// 0x34c3dbad
 - (id)init;	// 0x34c3dbf5
 - (void)_addRemoteSet:(id)set;	// 0x34c3ea29

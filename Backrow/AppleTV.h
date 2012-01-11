@@ -695,7 +695,7 @@
 #import "ATVUserRatingAndNumReviewsTransformer.h"
 #import "BRApplianceBrowserControlFactory.h"
 #import "BRTaskManager.h"
-#import "FujiConfig.h"
+//#import "FujiConfig.h"
 #import "ATVScreenSaverManager.h"
 #import "BRRetailHiddenMenuItem.h"
 #import "ScrollAnimationDelegate.h"
