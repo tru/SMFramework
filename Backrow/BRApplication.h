@@ -19,7 +19,7 @@
 	NSTimer *_retriggerTimer;	// 16 = 0x10
 	NSTimer *_b39PlayPauseHoldTimer;	// 20 = 0x14
 	NSMutableArray *_eventQueue;	// 24 = 0x18
-	NSAutoreleasePool *_runLoopPool;	// 28 = 0x1c
+//	NSAutoreleasePool *_runLoopPool;	// 28 = 0x1c
 	CFRunLoopSourceRef _source;	// 32 = 0x20
 	CFRunLoopRef _mainRunLoop;	// 36 = 0x24
 	double _flushBeforeTimeStamp;	// 40 = 0x28

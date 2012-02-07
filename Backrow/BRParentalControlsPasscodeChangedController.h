@@ -14,7 +14,7 @@ __attribute__((visibility("hidden")))
 @interface BRParentalControlsPasscodeChangedController : BRMenuController <BRMenuListItemProvider> {
 @private
 	BRController *_guardedController;	// 104 = 0x68
-	id *_menuItemNameKeys;	// 108 = 0x6c
+//	id *_menuItemNameKeys;	// 108 = 0x6c
 	BOOL _passcodeMatched;	// 112 = 0x70
 }
 - (id)initWithMatch:(BOOL)match guarding:(id)guarding;	// 0x34d621c9

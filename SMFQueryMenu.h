@@ -23,7 +23,7 @@
 @property (retain)NSArray *items;
 @property (retain)NSPredicate *predicate;
 @property (assign)id<SMFQueryDelegate> delegate;
--(void)setDelegate:(id<SMFQueryDelegate>)d;
+//-(void)setDelegate:(id<SMFQueryDelegate>)d;
 -(id<SMFQueryDelegate>)delegate;
 -(void)startFiltering:(NSString *)filterString;
 @end

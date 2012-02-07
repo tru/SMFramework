@@ -120,8 +120,8 @@ typedef struct __ATVMediaCollection *ATVMediaCollectionRef;
 typedef struct CGFunction *CGFunctionRef;
 
 typedef struct BRMultiPartImageMap {
-	id _field1;
-	id _field2;
+	__unsafe_unretained id _field1;
+	__unsafe_unretained id _field2;
 } BRMultiPartImageMap;
 
 typedef struct __WiFiDeviceClient WiFiDeviceClient;

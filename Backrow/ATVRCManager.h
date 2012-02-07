@@ -81,7 +81,7 @@
 - (void)setCustomPage:(unsigned short)page withUsage:(unsigned short)usage;	// 0x34c3e085
 - (void)setName:(id)name remoteSet:(id)set;	// 0x34c3e4c1
 // converted property setter: - (void)setState:(int)state;	// 0x34c3e0d1
-- (id)setTemporaryActiveSet:(id)set;	// 0x34c3e561
+//- (id)setTemporaryActiveSet:(id)set;	// 0x34c3e561
 - (void)startLearn;	// 0x34c3e165
 // converted property getter: - (int)state;	// 0x34c3e105
 // converted property getter: - (id)temporaryActiveSet;	// 0x34c3e531

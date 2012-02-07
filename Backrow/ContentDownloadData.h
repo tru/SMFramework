@@ -106,13 +106,13 @@ __attribute__((visibility("hidden")))
 // declared property setter: - (void)setMovieAverageBandwidth:(int)bandwidth;	// 0x34f13864
 // declared property setter: - (void)setMovieDuration:(int)duration;	// 0x34f138b4
 // declared property setter: - (void)setMoviePeakBandwidth:(int)bandwidth;	// 0x34f1388c
-- (void)setMoviePlaylist:(id)playlist;	// 0x34f13cb4
+//- (void)setMoviePlaylist:(id)playlist;	// 0x34f13cb4
 // declared property setter: - (void)setNsError:(id)error;	// 0x34f13e68
 // declared property setter: - (void)setParseKeyEndTime:(double)time;	// 0x34f138e0
 // declared property setter: - (void)setParseKeyStartTime:(double)time;	// 0x34f13910
 // declared property setter: - (void)setPlaylistGenerateEndTime:(double)time;	// 0x34f13940
 // declared property setter: - (void)setPlaylistGenerateStartTime:(double)time;	// 0x34f13970
-- (void)setRedirectedUrl:(id)url;	// 0x34f13c34
+//- (void)setRedirectedUrl:(id)url;	// 0x34f13c34
 // declared property setter: - (void)setSortedIndex:(unsigned)index;	// 0x34f13aec
 // declared property setter: - (void)setState:(int)state;	// 0x34f13a88
 // declared property getter: - (unsigned)sortedIndex;	// 0x34f13ad8
